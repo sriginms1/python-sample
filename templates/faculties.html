@@ -1,0 +1,21 @@
+
+{% extends 'masterfile.html' %}
+
+{% block mybody %}
+
+<h2> Faculties of the college</h2>
+<ul class="list-group">
+{% for faculty in sendDat%}
+<li class="list-group-item">
+        {{faculty.dept}}
+</li>
+<li class="list-group-item">
+    {{faculty.name}}
+</li>
+<li class="list-group-item">
+    {{faculty.email}}
+</li>
+<br>
+</ul>
+{% endfor %}
+{% endblock %}
